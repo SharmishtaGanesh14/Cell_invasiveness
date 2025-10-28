@@ -136,7 +136,7 @@ for folder in subfolders:
     print(f"Folder {folder} completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
 # ---- Merge and save all features ----
-print(f"\n💾 Saving training features...")
+print(f"\nSaving training features...")
 final_df = pd.concat(all_features, ignore_index=True)
 csv_path = os.path.join(output_dir, "full_segmentation_features.csv")
 final_df.to_csv(csv_path, index=False)
